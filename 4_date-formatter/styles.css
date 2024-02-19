@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-grey: #0a0a23;
+    --white: #ffffff;
+    --yellow: #f1be32;
+}
+
+body {
+    color: var(--white);
+    background-color: var(--dark-grey);
+}
+
+.title-container {
+    margin: .625rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.date-svg {
+    inline-size: 1.875rem;
+    block-size: 1.875rem;
+}
+
+.divider {
+    margin: auto;
+    inline-size: 9.375rem;
+    block-size: .625rem;
+    background-color: var(--yellow);
+}
+
+.dropdown-container {
+    inline-size: 50%;
+    margin: 2.5rem auto;
+    position: relative;
+}
+
+select {
+    display: block;
+    margin: 1.25rem auto 0;
+    inline-size: 100%;
+    block-size: 3.125rem;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--white);
+    border: none;
+    color: var(--dark-grey);
+    appearance: none;
+    padding: .625rem 2.375rem .625rem .625rem;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    transition: color .3s ease, background-color .3s ease, border-bottom-color .3s ease;
+}
+
+.select-icon {
+    position: absolute;
+    top: .25rem;
+    right: .25rem;
+    inline-size: 1.875rem;
+    block-size: 2.25rem;
+    pointer-events: none;
+    padding-left: .375rem;
+    transition: background-color .3s ease, border-color .3s ease;
+}
+
+.select-icon svg.icon {
+    transition: fill .3s ease;
+    fill: var(--dark-grey);
+}
+
+#current-date {
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .dropdown-container {
+        inline-size: 80%;
+    }
+
+    .date-svg {
+        display: none;
+    }
+}
