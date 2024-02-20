@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(27, 27, 50);
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  background-color: rgb(59, 59, 79);
+  border: 0.125rem solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+input {
+  background-color: rgb(10, 10, 35);
+  border: 1px solid rgb(59, 59, 79);
+  color: #ffffff;
+}
+
+.bold {
+  font-weight: bold;
+}
