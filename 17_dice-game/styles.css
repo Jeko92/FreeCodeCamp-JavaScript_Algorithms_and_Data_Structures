@@ -1,0 +1,129 @@
+:root {
+    --dark-grey: #1b1b32;
+    --light-grey: #f5f6f7;
+    --black:#000000;
+    --white:#ffffff;
+    --grey:#3b3b4f;
+    --golden-yellow:#fecc4c;
+    --yellow:#ffcc4c;
+    --gold:#feac32;
+    --orange:#ffac33;
+    --dark-orange:#f89808;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-grey);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    color: var(--light-grey);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.rules-container {
+    background-color: var(--light-grey);
+    block-size: 18.75rem;
+    border-radius: .625rem;
+    color: var(--black);
+    display: none;
+    inline-size: 50%;
+    margin: 1.25rem auto;
+    overflow-y: scroll;
+}
+
+.rules-container ul {
+    list-style-type: none;
+    padding: 1rem;
+    text-align: left;
+}
+
+.points {
+    margin-top: 1rem;
+}
+
+main {
+    background-color: var(--light-grey);
+    border-radius: .625rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31.25rem, 1fr));
+    gap: 1rem;
+    inline-size: 50%;
+    justify-items: center;
+    margin: auto;
+    padding: 1.25rem;
+}
+
+#dice {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.die {
+    block-size: 2.5rem;
+    border: .25rem solid var(--black);
+    inline-size: 2.5rem;
+    margin-right: 1rem;
+    padding: .625rem;
+    text-align: center;
+}
+
+.rounds-text {
+    text-align: center;
+}
+
+input[type="radio"]:disabled + label {
+    color: var(--grey);
+}
+
+#score-history {
+    list-style-position: inside;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--gold);
+    background-image: linear-gradient(var(--golden-yellow), var(--orange));
+    border-color: var(--gold);
+    border-width: .25rem;
+    color: var(--black);
+    cursor: pointer;
+    inline-size: 12.5rem;
+    margin: .625rem 0 .625rem .5rem;
+}
+
+.btn:hover:enabled {
+    background-image: linear-gradient(var(--yellow), var(--dark-orange));
+}
+
+@media only screen and (max-width: 992px){
+    main {
+        inline-size: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .btn {
+        inline-size: 7.5rem;
+    }
+}
+
+
+
+
