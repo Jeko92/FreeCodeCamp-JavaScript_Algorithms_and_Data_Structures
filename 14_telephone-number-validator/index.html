@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/png" />
+    <!-- Google Fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts End-->
+    <title>Telephone NUmber Validator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <img
+        src="./assets/fcc_primary.svg"
+        alt="freeCodeCamp Logo"
+        class="freecodecamp-logo"
+      />
+      <h1>Telephone Number Validator</h1>
+      <div class="phone-container">
+        <div class="phone-background">
+          <div class="phone-camera"></div>
+        </div>
+        <label for="user-input">Enter a Phone Number:</label>
+        <input type="text" id="user-input" value="" maxlength="20" />
+        <div id="results-div"></div>
+        <div class="phone-footer">
+          <button class="btn-styles" id="check-btn">Check</button>
+          <button class="btn-styles" id="clear-btn">Clear</button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
