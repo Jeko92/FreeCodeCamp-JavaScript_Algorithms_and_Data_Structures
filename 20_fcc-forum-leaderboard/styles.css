@@ -1,0 +1,173 @@
+:root {
+    --main-bg-color: #2a2a40;
+    --black: #000000;
+    --dark-navy: #0a0a23;
+    --dark-grey: #d0d0d5;
+    --medium-grey: #dfdfe2;
+    --light-grey: #f5f6f7;
+    --peach: #f28373;
+    --salmon-color:#f0aea9;
+    --light-blue: #8bd9f6;
+    --light-orange:#f8b172;
+    --light-green:#93cb5b;
+    --golden-yellow: #f1ba33;
+    --gold:#f9aa23;
+    --green:#6bca6b;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Helvetica, Arial, sans-serif;
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: var(--dark-navy);
+    padding: .625rem 0;
+}
+
+main {
+ flex: 1;
+}
+
+.fcc-logo {
+    display: block;
+    inline-size: 13.125rem;
+    margin: auto;
+}
+
+.title {
+    color: var(--light-grey);
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    padding: 0 1.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    color: var(--dark-grey);
+    inline-size: 100%;
+    margin: auto;
+    overflow-x: scroll;
+    table-layout: fixed;
+}
+
+#topics {
+    text-align: start;
+    inline-size: 60%;
+}
+
+th {
+    border-bottom: .125rem solid var(--dark-grey);
+    padding-bottom: .625rem;
+    font-size: 1.3rem;
+}
+
+th:not(:first-child){
+    text-align: center;
+}
+
+td {
+    border-bottom: 1px solid var(--dark-grey);
+    padding: 1.25rem 0;
+}
+
+.post-title {
+    color: var(--medium-grey);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.category {
+    color: var(--black);
+    display: block;
+    inline-size: fit-content;
+    margin: .625rem 0 .625rem;
+    padding: .25rem;
+    text-decoration: none;
+}
+
+.career {
+    background-color: var(--salmon-color);
+}
+
+.feedback,
+.html-css {
+    background-color: var(--light-blue);
+}
+
+.support {
+    background-color: var(--light-orange);
+}
+
+.general {
+    background-color: var(--light-green);
+}
+
+.javascript {
+    background-color: var(--golden-yellow);
+}
+
+.backend {
+    background-color: var(--gold);
+}
+
+.python {
+    background-color: var(--green);
+}
+
+.motivation {
+    background-color: var(--peach);
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    gap: .625rem;
+    flex-wrap: wrap;
+}
+
+.avatar-container img {
+    block-size: 1.875rem;
+    inline-size: 1.875rem;
+}
+
+@media only screen and (max-width: 750px){
+    .table-wrapper{
+        padding: 0 1rem;
+    }
+
+    table {
+        inline-size: 43.75rem;
+    }
+
+    th {
+        font-size: 1.2rem;
+    }
+
+    .post-title {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    color: var(--dark-grey);
+    padding: 1rem;
+}
