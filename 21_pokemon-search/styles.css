@@ -1,0 +1,304 @@
+:root {
+    --main-bg-color: #1b1b32;
+    --dark-navy: #0a0a23;
+    --grey-00:#f0f1f7;
+    --light-grey: #f5f6f7;
+    --box-shadow-grey:rgba(223, 220, 220, 0.75);
+    --light-blue: #198eee;
+    --dark-purple: #7f21ab;
+    --red: #ff0000;
+
+    /* Pokémon Colors*/
+    --normal-color: #b7b7aa;
+    --fire-color: #ff6f52;
+    --water-color: #42a1ff;
+    --electric-color: #fecc33;
+    --grass-color: #78cc55;
+    --ice-color: #66ccfe;
+    --fighting-color: #d3887e;
+    --poison-color: #c68bb7;
+    --ground-color: #dfba52;
+    --flying-color: #8899ff;
+    --psychic-color: #ff66a3;
+    --bug-color: #aabb23;
+    --rock-color: #baaa66;
+    --ghost-color: #9995d0;
+    --dragon-color: #9e93f1;
+    --dark-color: #b59682;
+    --steel-color: #abaabb;
+    --fairy-color: #ed99ed;
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+}
+
+/* Project Styles */
+
+
+body {
+    background-color: var(--main-bg-color);
+    block-size: 100vh;
+    color: var(--dark-navy);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.freecodecamp-logo {
+    block-size: 1.875rem;
+    margin: 1.5rem 0;
+}
+
+h1 {
+    color:var(--light-grey);
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--light-grey);
+    border: 1px solid var(--light-grey);
+    border-radius: 1rem;
+    box-shadow: .625rem .625rem 0 0 var(--box-shadow-grey);
+    inline-size: 20.375rem;
+    margin: 1.5rem 0;
+}
+
+.output,
+#search-form {
+    display: flex;
+    justify-content: center;
+}
+
+#search-form {
+    border-radius: .5rem .5rem 0 0;
+    flex-wrap: wrap;
+    gap:.625rem;
+    margin: .625rem 0;
+    padding: .375rem;
+}
+
+label {
+    align-self: center;
+}
+
+#search-input:focus-visible,
+#search-button:focus-visible {
+    outline: .25rem solid var(--light-blue);
+}
+
+#search-input {
+    block-size: 2.5rem;
+    inline-size: 12.5rem;
+    padding-left: .625rem;
+}
+
+#search-button {
+    background-color: var(--dark-purple);
+    border:none;
+    border-radius: 1.25rem;
+    color:var(--light-grey);
+    inline-size: 5rem;
+    padding: .875rem 0;
+    text-align: center;
+}
+
+.output {
+    align-items: center;
+    flex-direction: column;
+    margin: .625rem 0;
+    padding: .375rem;
+}
+
+.top-container,
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+    min-block-size: 20.375rem;
+}
+
+
+.top-container {
+    background-color: var(--grey-00);
+    margin-bottom: .625rem;
+    padding: .625rem;
+}
+
+.name-and-id {
+    block-size: 1.75rem;
+    font-size: 1.1rem;
+    margin-bottom: .375rem;
+    text-transform: capitalize;
+}
+
+.size {
+    block-size: 1.375rem;
+    font-size:  .875rem;
+}
+
+.sprite-container {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sprite {
+    inline-size: 11.25rem;
+}
+
+#types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .375rem;
+    justify-content: flex-start;
+    min-block-size: 1.875rem;
+}
+
+.type {
+    background-color: var(--red);
+    border-radius: .325rem;
+    font-size: .75rem;
+    inline-size: 4.125rem;
+    padding: .375rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    background-color: var(--dark-purple);
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: var(--light-grey);
+    font-size: 1rem;
+    inline-size: 100%;
+}
+
+th:nth-child(even),
+td:nth-child(even){
+    border-left: .375rem solid var(--light-grey);
+}
+
+tr {
+    border-bottom: .375rem solid var(--light-grey);;
+}
+
+td,
+th {
+    text-align: center;
+    padding: .5rem;
+}
+
+/* Styling for Pokémon types*/
+.normal {
+    background-color: var(--normal-color);
+}
+
+.fire {
+    background-color: var(--fire-color);
+}
+
+.water {
+    background-color: var(--water-color);
+}
+
+.electric {
+    background-color: var(--electric-color);
+}
+
+.grass {
+    background-color: var(--grass-color);
+}
+
+.ice {
+    background-color: var(--ice-color);
+}
+
+.fighting {
+    background-color: var(--fighting-color);
+}
+
+.poison {
+    background-color: var(--poison-color);
+}
+
+.ground {
+    background-color: var(--ground-color);
+}
+
+.flying {
+    background-color: var(--flying-color);
+}
+
+.psychic {
+    background-color: var(--psychic-color);
+}
+
+.bug {
+    background-color: var(--bug-color);
+}
+
+.rock {
+    background-color: var(--rock-color);
+}
+
+.ghost {
+    background-color: var(--ghost-color);
+}
+
+.dragon {
+    background-color: var(--dragon-color);
+}
+
+.dark {
+    background-color: var(--dark-color);
+}
+
+.steel {
+    background-color: var(--steel-color);
+}
+
+.fairy {
+    background-color: var(--fairy-color);
+}
+
+
+@media only screen and (min-width: 550px){
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        inline-size: 28.125rem;
+    }
+
+    #search-form,
+    .top-container,
+    .bottom-container {
+        inline-size: 95%;
+    }
+
+    .type {
+        inline-size: 4.5rem;
+    }
+}
